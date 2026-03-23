@@ -38,4 +38,9 @@ export const ENV = {
   // Notifications (Optional)
   telegramBotToken: process.env.TELEGRAM_BOT_TOKEN ?? "",
   emailServiceKey: process.env.EMAIL_SERVICE_KEY ?? "",
+
+  // Alibaba Cloud
+  alibabaDashscopeApiKey: process.env.ALIBABA_DASHSCOPE_API_KEY ?? "",
+  alibabaAccessKeyId: process.env.ALIBABA_ACCESS_KEY_ID ?? "",
+  alibabaAccessKeySecret: process.env.ALIBABA_ACCESS_KEY_SECRET ?? "",
 };
