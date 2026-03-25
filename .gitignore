@@ -108,3 +108,99 @@ temp/
 
 # Webdev artifacts (checkpoint zips, migrations, etc.)
 .webdev/
+
+# ===== CRITICAL: CREDENTIAL & SECRET PROTECTION =====
+# Private Keys & Blockchain Credentials
+*.key
+*.pem
+*.p8
+*.p12
+*.pfx
+private_key*
+secret_key*
+api_key*
+access_key*
+secret_access_key*
+*.wallet
+*.keystore
+*.json.encrypted
+mnemonic.txt
+seed.txt
+private_keys.json
+wallets.json
+addresses.json
+agent_keys.json
+mpc_keys.json
+
+# API Keys & Tokens (NEVER commit these!)
+*_api_key*
+*_token*
+*_secret*
+*_password*
+*_credential*
+biconomy_api_key*
+nvidia_api_key*
+helius_api_key*
+alchemy_api_key*
+solana_rpc_key*
+supabase_key*
+jwt_secret*
+oauth_token*
+telegram_token*
+
+# Agent Configuration with Secrets
+agent_config.secret.json
+agent_keys.secret.json
+agent_credentials.json
+agent_*.secret.*
+mpc_agent_config.json
+nemoclaw_config.secret.json
+
+# Ethereum & Multi-chain Signer Data
+eth_signer_*.json
+mpc_signer_*.json
+signer_*.json
+eth_address_*.json
+private_key_*.json
+
+# Agent Execution Logs (sensitive)
+agent_execution.log
+agent_decisions.log
+agent_errors.log
+mpc_execution.log
+
+# Blockchain Transaction Data (sensitive)
+transaction_history.json
+tx_*.json
+mempool_*.json
+
+# Multi-chain Integration
+biconomy_tx_*.json
+gas_sponsorship_*.json
+helius_events_*.json
+nemoclaw_*.json
+nemoclaw_logs/
+
+# Agent State & Memory
+agent_memory.json
+agent_state.json
+agent_beliefs.json
+agent_portfolio.json
+
+# Security & Audit
+security-scan-results.json
+vulnerability-report.json
+audit-log.json
+audit_reports/
+compliance_reports/
+security_scans/
+
+# Performance & Monitoring (may contain sensitive data)
+perf_*.json
+metrics_*.json
+monitoring_*.json
+
+# Keep these files (examples & templates)
+!.env.example
+!.env.template
+!.env.sample
